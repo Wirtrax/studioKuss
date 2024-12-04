@@ -1,0 +1,84 @@
+@keyframes phone__versionAnimation  {
+    from{
+      opacity: 0;
+    }
+    to {opacity: 1;}
+  }
+  @media (max-width: 1000px){
+    .nav__list{
+        display: none;
+    }
+    .contact{
+        display: none; 
+    }
+
+    .phone__version{
+        display: block;
+        position: fixed;
+        z-index: 10;
+        top: 46px;
+        right: 30px;
+    }
+
+    .nav.open .nav__list{ 
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 40%;
+        right: 0;
+        bottom: 0;
+        background-color: #ffc3b7;
+        z-index: 5;
+        padding:46px 30px ;
+       flex-direction: column;
+       row-gap: 40px;
+       font-size: 34px;
+       font-weight: 700;
+
+    }
+
+    .contact.open{ 
+        display: flex;
+        position: fixed;
+        left: 50%;
+        left: 200;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+       flex-direction: column;
+       row-gap: 40px;
+       font-size: 16px;
+       font-weight: 700;
+       padding:46px 30px ;
+    }
+    .header__row, .halls__card, .halls__cardRevers{
+        flex-direction: column;
+    }
+
+    
+    .halls__card, .halls__cardRevers{
+justify-content: center;
+align-items: center;
+    }
+    .order_photo, .sub__img, .sub__imgRevers{
+        display: none;
+    }
+
+    .main__img{
+        max-width: 320;
+    }
+
+    .service-row, .halls__columns{
+        gap: 15px;
+    }
+    .halls__columns{
+        gap: 25px;
+    }
+    .halls_text{
+        padding-top: 10px;
+    }
+    .footer__item{
+        flex-direction: column;
+    }
+
+}
